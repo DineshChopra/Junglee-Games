@@ -1,0 +1,35 @@
+.payment{
+
+    .header-link{
+        // margin-right: 0px;
+        margin-left: 0px;
+    }
+    .payment-panel{
+        background-color: white;
+        border: 1px #c8c1c1 solid;
+        border-radius: 0px 10px 0 0;
+        height: 300px;
+        margin-top: 10px;
+        
+        .left-panel {
+            width: 25%;
+            height: 100%;
+            float: left;
+            .payment-type{
+                background-color: #e3eaf1;
+                height: 20%;
+                border: 1px #c8c1c1 solid;
+                padding: 10px;  
+            }
+            .active{
+                background-color: #b32532;
+            }
+        }
+        .right-panel{
+            width: 75%;
+            height: 100%;
+            float: right;
+            padding: 10px;
+        }
+    }
+}

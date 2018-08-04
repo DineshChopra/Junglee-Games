@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Create project
+ng new JungleeGames --prefix=jg --style=scss
+
+## Add In Memory web api
+npm install "angular-in-memory-web-api" --save
+
+## Create In Memory service
+ng g s server/in-memory-data
+
+## Install Bootstrap
+npm install bootstrap --save
+Add one entry in angular.json file --> styles array `"node_modules/bootstrap/dist/css/bootstrap.min.css",`

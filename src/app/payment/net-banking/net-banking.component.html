@@ -1,0 +1,15 @@
+<div class="netBanking">
+  <div *ngFor="let bank of banks$ | async | slice : 0:3" class="bank">
+    {{bank}}
+    <input name="paymentSource" 
+      ng-control="paymentSource" type="radio" 
+      [value]="bank"  
+      [(ngModel)]="package.paymentSource" >
+  </div>
+  <select class="form-control select-bank" id="bank"
+                [(ngModel)]="package.paymentSource" name="bank"
+                #power="ngModel">
+          <option *ngFor="let bank of banks$| async" [value]="bank">{{bank}}</option>
+        </select>
+  <button (click)="doPayment()" class="btn" [disabled]="!package.paymentSource">Continue</button>
+</div>

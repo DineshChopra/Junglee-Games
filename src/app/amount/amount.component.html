@@ -1,0 +1,43 @@
+<div class="shell-container">
+  <p>Enter Amount</p>
+  <div class="payment-package">
+    <div class="package">
+      <p>&#8377; 2000</p>
+      <input name="options" 
+      ng-control="options" type="radio" 
+      [value]="2000"  
+      [(ngModel)]="package.amount" >
+    </div>
+    <div class="package">
+      <p>&#8377; 1000</p>
+      <input name="options" 
+      ng-control="options" type="radio" 
+      [value]="1000"  
+      [(ngModel)]="package.amount" >
+    </div>
+    <div class="package">
+      <p>&#8377; 500</p>
+      <input name="options" 
+      ng-control="options" type="radio" 
+      [value]="500"  
+      [(ngModel)]="package.amount" >
+    </div>
+    <div class="package">
+      <p>&#8377; 100</p>
+      <input name="options" 
+      ng-control="options" type="radio" 
+      [value]="100"  
+      [(ngModel)]="package.amount" >
+    </div>
+    <div class="package">
+      <p>Enter Amount</p>
+      <input name="amount" type="text" [(ngModel)]="package.manualAmount"/>
+      <input name="options" 
+      ng-control="options" type="radio" 
+      [value]="0"  
+      [(ngModel)]="package.amount" >
+    </div>
+    <button class="btn btn-primary btn-xs  btn-continue" (click)="selectPayment()">Continue > ></button>
+  </div>
+</div>
+

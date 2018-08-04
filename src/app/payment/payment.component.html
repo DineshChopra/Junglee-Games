@@ -1,0 +1,20 @@
+<div class="shell-container payment">
+  <nav>
+    <a routerLink="/amount" routerLinkActive="active" class="header-link"> 
+      <p class="fa fa-check-circle"></p> Enter Amount</a>
+    <a> >> Payment</a>
+  </nav>
+  <div class="payment-panel">
+    <div class="left-panel">
+      <div class="payment-type" [class.active]="isActive('creditCard')" (click)="selectPayment('creditCard')">Credit Card</div>
+      <div class="payment-type" [class.active]="isActive('debitCard')" (click)="selectPayment('debitCard')">Debit Card</div>
+      <div class="payment-type" [class.active]="isActive('netBanking')" (click)="selectPayment('netBanking')">Net Banking</div>
+      <div class="payment-type" [class.active]="isActive('wallet')" (click)="selectPayment('wallet')">Wallet</div>
+      <div class="payment-type" [class.active]="isActive('cashCard')" (click)="selectPayment('cashCard')">Cash Card</div>
+    </div>
+    <div class="right-panel">
+      <router-outlet>
+      </router-outlet>
+    </div>
+  </div>
+</div>

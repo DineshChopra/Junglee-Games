@@ -1,0 +1,14 @@
+<div class="shell-container payment-success">
+  <nav>
+    <a routerLink="/amount" routerLinkActive="active" class="header-link">
+      <p class="fa fa-check-circle"></p> 1. Enter Amount</a>
+    >>
+    <a routerLink="/payment" routerLinkActive="active" class="header-link">  
+      <p class="fa fa-check-circle"></p> 2. Payment</a>
+  </nav>
+  <div class="middle-container">
+    <p class="success-text">Your payment of amount<b> &#8377; {{amount}}  </b> was successful.</p>
+    <p class="success-text">Payment Type : Net Banking, Bank: <b>{{bank}}</b></p>
+    <button class="btn" (click)="addMoreCash()">Add More Cash >> </button>
+  </div>
+</div>

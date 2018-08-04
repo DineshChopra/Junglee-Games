@@ -1,0 +1,21 @@
+.netBanking{
+    padding: 10px;
+    .bank{
+        float: left;
+        height: 40px;
+        background-color: #dc3545;
+        border-radius: 5px;
+        line-height: 30px;
+        padding: 5px 10px 5px 10px;
+        margin: 10px;
+        color: white;
+    }
+
+    .select-bank{
+        width: 50%;
+        margin-left: 10px;
+    }
+    .btn{
+        margin-left: 10px;
+    }
+}

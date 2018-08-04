@@ -1,0 +1,28 @@
+.shell-container{
+    .payment-package{
+        background-color: white;
+        border: 1px #c8c1c1 solid;
+        border-radius: 10px 10px 0 0;
+        height: 360px;
+        padding: 10px;
+
+        .package{
+            width: 18%;
+            height: 150px;
+            background-color: #9b0202;
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 5px 0 0;
+            color: white;
+        }
+        .btn-continue{
+            background-color: green;
+            color: white;
+            float: right;
+            margin-right: 15px;
+            margin-top: 75px;
+            padding: 10px;
+        }
+    }
+}
