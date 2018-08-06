@@ -19,6 +19,6 @@ export class AmountComponent implements OnInit {
     if (this.package.amount === 0) {
       this.package['manualAmount'] = parseInt(this.package['manualAmount'], 10);
     }
-    this.router.navigate(['payment']);
+    this.router.navigate(['payment/netBanking']);
   }
 }

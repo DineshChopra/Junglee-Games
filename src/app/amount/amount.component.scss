@@ -15,6 +15,36 @@
             margin: 10px;
             border-radius: 5px 5px 0 0;
             color: white;
+            text-align: center;
+            sup{
+                font-weight:400;
+            } 
+            p{
+                margin: 0;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            
+
+        }
+        .bonusBanner{
+            background-color: #ffbf02;
+            width: 70%;
+            margin: -10px auto 0;
+            border-bottom: 1px dashed #9c0b06;
+            height: 70px;
+            text-align: center;
+            padding: 10px 0;
+            color: #9c0b06;
+            font-weight:400;
+            sup{
+                font-weight:400;
+            } 
+            p{
+                margin: 0;
+                font-size: 20px;
+                font-weight: 600;
+            }
         }
         .btn-continue{
             background-color: green;
@@ -23,6 +53,13 @@
             margin-right: 15px;
             margin-top: 75px;
             padding: 10px;
+        }
+        .package.manualEnter p{
+            font-size: 23px;
+            font-weight: 300;
+            border-bottom: 1px solid #cd2c1f;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
         }
     }
 }

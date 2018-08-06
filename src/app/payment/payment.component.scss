@@ -15,16 +15,33 @@
             width: 25%;
             height: 100%;
             float: left;
+            
             .payment-type{
                 background-color: #e3eaf1;
                 height: 20%;
                 border: 1px #c8c1c1 solid;
-                padding: 10px;  
+                padding: 10px; 
+                position: relative;
+                cursor: pointer; 
             }
             .active{
-                background-color: #b32532;
+                background-color: #591508;
+                color:#fff;
+                
             }
         }
+        .left-panel .payment-type.active::after {
+            width: 0;
+            height: 0;
+            border-left: 15px solid #591508;
+            border-right: 15px solid #00000000;
+            border-top: 15px solid #b3253200;
+            border-bottom: 15px solid #b3253200;
+            content: " ";
+            position: absolute;
+            right: -10%;
+            top: 25%;
+          }
         .right-panel{
             width: 75%;
             height: 100%;

@@ -2,34 +2,50 @@
   <p>Enter Amount</p>
   <div class="payment-package">
     <div class="package">
-      <p>&#8377; 2000</p>
+      <div class="bonusBanner">
+        <span>Bonus</span>
+        <p><sup>&#8377;</sup>2000</p>
+      </div>
+      <p><sup>&#8377;</sup> 2000</p>
       <input name="options" 
       ng-control="options" type="radio" 
       [value]="2000"  
       [(ngModel)]="package.amount" >
     </div>
     <div class="package">
-      <p>&#8377; 1000</p>
+      <div class="bonusBanner">
+          <span>Bonus</span>
+          <p><sup>&#8377;</sup>1000</p>
+        </div>
+        <p><sup>&#8377;</sup> 1000</p>
       <input name="options" 
       ng-control="options" type="radio" 
       [value]="1000"  
       [(ngModel)]="package.amount" >
     </div>
     <div class="package">
-      <p>&#8377; 500</p>
+      <div class="bonusBanner">
+          <span>Bonus</span>
+          <p><sup>&#8377;</sup>500</p>
+        </div>
+        <p><sup>&#8377;</sup> 500</p>
       <input name="options" 
       ng-control="options" type="radio" 
       [value]="500"  
       [(ngModel)]="package.amount" >
     </div>
     <div class="package">
-      <p>&#8377; 100</p>
+      <div class="bonusBanner" style="visibility: hidden;">
+          <span>Bonus</span>
+          <p><sup>&#8377;</sup>100</p>
+        </div>
+        <p><sup>&#8377;</sup> 100</p>
       <input name="options" 
       ng-control="options" type="radio" 
       [value]="100"  
       [(ngModel)]="package.amount" >
     </div>
-    <div class="package">
+    <div class="package manualEnter">
       <p>Enter Amount</p>
       <input name="amount" type="text" [(ngModel)]="package.manualAmount"/>
       <input name="options" 
